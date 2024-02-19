@@ -7,7 +7,7 @@ class Library:
         self.file.close()
 
     def list_books(self):
-        self.file.seek(0)  # Reset file pointer to beginning
+        self.file.seek(0)  
         lines = self.file.readlines()
         for line in lines:
             book_info = line.strip().split(',')
